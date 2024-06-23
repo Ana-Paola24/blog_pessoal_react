@@ -1,0 +1,15 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 197, 16);
+    text-align: center;
+    font-size: 250px;
+    display: flex;
+}
+
+.img{
+    display: flex;
+    width: 84em;
+    height: 730px;
+    margin: 0 auto;
+}
