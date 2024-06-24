@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Home.css';
-import homeLogo from '../../assets/fundo.png'
 
-const Home = () => {
+interface myProps{
+  titulo: string;
+  texto: string;
+}
+
+function Home(props:myProps) {
+
+  const [loggedIn, setLoggedIn] = useState(false);
+  
   return (
     <>
-        <h1 className='titulo'>Home</h1>
-        <img src={homeLogo} alt='Imagem Tela Inicial' className='img'/>
+    <div>
+      {loggedIn ? (
+        <h1>Bem-Vindo!</h1> 
+      ) : (
+        <button onClick={() => setLoggedIn(true)}>Entrar</button>
+      )}
+    </div>
+    <hr />
+    <div>
+    <h1>{props.titulo}</h1> 
+    <p>{props.texto}</p>
+    </div>
     </>
   )
 }
