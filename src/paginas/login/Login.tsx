@@ -1,19 +1,16 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React from 'react';
+
 
 function Login() {
-    let navigate = useNavigate()
+    return (
+        <>
+            <div className="h-96 mb-96">
 
-  return (
-    <div>
-        <h2 className='text-slate-900 text-5xl'>Login</h2>
-        <div>
-            <button type='submit' onClick={() => {navigate('/home')}}
-                className='hover:underLine mx-4'>Login useNavigate</button>    
-            <Link to='/home' className="hover:underline mx-4">Login por link</Link>        
-        </div>    
-    </div>
-  )
+                <h1 className='text-xl'>Login</h1>
+
+            </div>
+        </>
+    );
 }
 
-export default Login
+export default Login;

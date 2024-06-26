@@ -15,7 +15,7 @@ function Home() {
               </div>
             </div>
             <div className="flex justify-center ">
-              <img src={homeLogo} alt="" className='w-1/2' />
+              <img src={homeLogo} alt="" className='w-1/4' />
             </div>
           </div>
         </div>
