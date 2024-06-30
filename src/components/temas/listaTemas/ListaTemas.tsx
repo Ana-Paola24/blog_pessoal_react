@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import { AuthContext } from '../../../contexts/AuthContext';
 import { buscar } from '../../../services/Service';
-import { Dna } from 'react-loader-spinner';
+import { Dna, Hearts } from 'react-loader-spinner';
 
 function ListaTemas() {
 
@@ -42,13 +42,14 @@ function ListaTemas() {
   return (
     <>
       {temas.length === 0 && (
-        <Dna
-          visible={true}
-          height="200"
-          width="200"
-          ariaLabel="dna-loading"
-          wrapperStyle={{}}
-          wrapperClass="dna-wrapper mx-auto"
+        <Hearts
+        height="350"
+        width="350"
+        color="#ec4899"
+        ariaLabel="hearts-loading"
+        wrapperStyle={{}}
+        wrapperClass="mx-auto justify-center"
+        visible={true}
         />
       )}
       <div className="flex justify-center w-full my-4">

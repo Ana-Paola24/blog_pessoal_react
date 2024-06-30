@@ -30,5 +30,5 @@ export const atualizar = async(url: string, dados: Object, setDados: Function, h
 }
 
 export const deletar = async(url: string, header: Object) => {
-    await api.post(url, header)
+    await api.delete(url, header)
 }
